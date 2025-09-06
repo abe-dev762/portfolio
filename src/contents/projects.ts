@@ -1,0 +1,44 @@
+import {  Project } from "@/types";
+
+export const projects: Project[] = [
+    {
+        title: 'E-commerce Platform',
+        description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'Sanity'],
+        githubLink: 'https://github.com/abe-dev762/marga-shop-e-commerce',
+        demoLink: 'https://marga-shop-e-commerce.vercel.app',
+        image: '/project/e-commerce.png',
+      },
+      {
+        title: 'Currency Converter',
+        description: 'A HTML + CSS and JavaScript project',
+        technologies: ['HTML 5', 'CSS 3', 'JavaScript'],
+        githubLink: 'https://github.com/abe-dev762/currency-converter',
+        demoLink: 'https://abe-dev762.github.io/currency-converter/',
+        image: '/project/currency-converter.png',
+      },
+      {
+        title: 'Blomma',
+        description: 'A front-end project using Vite + React and Tailwind CSS',
+        technologies: ['Vite', 'React', 'Tailwind CSS', 'Redux', 'JavaScript'],
+        githubLink: 'https://github.com/abe-dev762/Blomma',
+        demoLink: 'https://blomma-rouge.vercel.app/',
+        image: '/project/blomma.png',
+      },
+      {
+        title: 'Sleep/Rest Tracker',
+        description: 'A full-stack sleep tracker platform built with Next.js, TypeScript, and Tailwind CSS.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Potsgresql', 'Prisma ORM'],
+        githubLink: 'https://github.com/abe-dev762/Rest-Track',
+        demoLink: 'https://rest-track.vercel.app',
+        image: '/project/rest-track.png',
+      },
+      {
+        title: 'Expense Tracker',
+        description: 'A full-stack expense tracker platform built with Next.js, TypeScript, and Tailwind CSS.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Potsgresql', 'Prisma ORM'],
+        githubLink: 'https://github.com/abe-dev762/finsight-app',
+        demoLink: 'https://finsight-app-dun.vercel.app/',
+        image: '/project/finsight.png',
+      },
+]
