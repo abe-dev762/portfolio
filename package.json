@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@emailjs/nodejs": "^5.0.2",
     "@heroicons/react": "^2.2.0",
+    "axios": "^1.11.0",
     "motion": "^12.23.12",
     "next": "15.5.2",
     "next-images": "^1.8.5",

@@ -17,6 +17,7 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/projects', label: 'Projects' },
+    { href: '/certificates', label: 'Certificate' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -25,7 +26,7 @@ export default function Navbar() {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
-            Devfolio&trade;
+            Ahmad Abidin
           </Link>
           
           {/* Desktop Menu */}

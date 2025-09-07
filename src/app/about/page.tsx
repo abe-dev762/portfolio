@@ -1,6 +1,14 @@
 'use client';
-import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa';
 import { motion } from 'motion/react';
+import { 
+  FaLaptopCode,
+  FaCode,
+  FaGraduationCap,
+  FaNodeJs, 
+  FaGitAlt, 
+  FaJava,
+  FaSyncAlt 
+} from "react-icons/fa";
 import { 
   fadeInUp, 
   fadeInDown, 
@@ -14,7 +22,16 @@ import { SiReact,
         SiAngular, 
         SiTypescript, 
         SiTailwindcss, 
-        SiHtml5 } from "react-icons/si";
+        SiHtml5,
+        SiCss3,
+        SiExpress,
+        SiPostgresql,
+        SiMongodb,
+        SiMysql,
+        SiSpringboot,
+        SiKubernetes,
+        SiDocker 
+       } from "react-icons/si";
 
 
 export default function About() {
@@ -33,9 +50,10 @@ export default function About() {
         {...fadeInUp}
       >
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
-          With a strong foundation in both frontend and backend technologies, I create seamless
-          user experiences and robust server-side solutions.
+          &quot; I&apos;m Full Stack Developer with expertise in designing, developing, and deploying modern web applications.
+           With a strong foundation in both frontend and backend technologies, I specialize in creating scalable, high-performance solutions that deliver exceptional user experiences.
+          I&apos;m proficient in technologies such as React, Next.js, Angular, Node.js, Spring Boot, PostgreSQL, and Docker, 
+          and I have hands-on experience implementing CI/CD pipelines, optimizing database performance, and building secure, maintainable architectures. &quot;
         </p>
       </motion.section>
 
@@ -66,11 +84,11 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
               <li className="flex items-center gap-2"><SiReact className="text-blue-500" /> React</li>
-              <li>Next.js</li>
-              <li>Angular</li>
-              <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-              <li>HTML5 / CSS3</li>
+              <li className="flex items-center gap-2"><SiNextdotjs className="text-black dark:text-white" /> Next.Js</li>
+              <li className="flex items-center gap-2"><SiAngular className="text-red-500" /> Angular</li>
+              <li className="flex items-center gap-2"><SiTypescript className="text-blue-600" /> TypeScript</li>
+              <li className="flex items-center gap-2"><SiTailwindcss className="text-sky-500" /> Tailwind CSS</li>
+              <li className="flex items-center gap-2"><SiHtml5 className="text-orange-500" /> + <SiCss3 className='text-blue-600'/> HTML5 / CSS3</li>
             </ul>
           </motion.div>
           
@@ -82,13 +100,27 @@ export default function About() {
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
-              <li>Java</li>
-              <li>Spring Boot</li>
+              <li className="flex items-center gap-2">
+                <FaNodeJs className="text-green-500" /> Node.js
+              </li>
+              <li className="flex items-center gap-2">
+                <SiExpress className="text-gray-700 dark:text-gray-300" /> Express
+              </li>
+              <li className="flex items-center gap-2">
+                <SiPostgresql className="text-blue-600" /> PostgreSQL
+              </li>
+              <li className="flex items-center gap-2">
+                <SiMongodb className="text-green-600" /> MongoDB
+              </li>
+              <li className="flex items-center gap-2">
+                <SiMysql className="text-blue-500" /> MySQL
+              </li>
+              <li className="flex items-center gap-2">
+                <FaJava className="text-red-500" /> Java
+              </li>
+              <li className="flex items-center gap-2">
+                <SiSpringboot className="text-green-500" /> Spring Boot
+              </li>
             </ul>
           </motion.div>
           
@@ -100,10 +132,18 @@ export default function About() {
             <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
-              <li>Git / GitHub</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>CI/CD</li>
+              <li className='flex items-center gap-2'>
+                <FaGitAlt className='text-orange-600'/> Git / GitHub
+              </li>
+               <li className="flex items-center gap-2">
+                <SiDocker className="text-blue-400" /> Docker
+               </li>
+               <li className="flex items-center gap-2">
+                <SiKubernetes className="text-blue-600" /> Kubernetes
+               </li>
+               <li className="flex items-center gap-2">
+                <FaSyncAlt className="text-purple-500" /> CI/CD
+               </li>
             </ul>
           </motion.div>
         </motion.div>

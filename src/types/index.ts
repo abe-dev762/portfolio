@@ -7,3 +7,12 @@ export interface Project {
   demoLink: string;
   image: string;
 }
+
+export interface Certificate {
+  title: string;
+  description?: string;
+  isuuer: string;
+  credentialId?: string;
+  credentialUrl?: string;
+  image: string;
+}
