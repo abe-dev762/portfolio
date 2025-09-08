@@ -23,7 +23,7 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
           >
             Hi, I&apos;m <motion.span 
-              className="text-primary"
+              className="bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-700 bg-clip-text text-transparent"
               {...fadeIn}
               transition={{ delay: 0.8 }}
             >
@@ -74,7 +74,7 @@ export default function Hero() {
             >
               <Link
                 href="/projects"
-                className="bg-primary inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                className="bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-700 inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:from-cyan-600 hover:via-blue-700 hover:to-indigo-800 transition-colors"
               >
                 View Projects
               </Link>
@@ -85,7 +85,7 @@ export default function Hero() {
             >
               <Link
                 href="/contact"
-                className=" inline-block w-full bg-gray-500  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                className=" inline-block w-full bg-gray-300  md:w-auto text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
               >
                 Contact Me
               </Link>

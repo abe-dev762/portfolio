@@ -23,7 +23,7 @@ export default function Certificates() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Here are my certification. Click on the links to view/verify Certificates.
+                Here are my certifications. Click on the links to verify Certificates.
               </motion.p>
               
               <motion.div 
@@ -61,6 +61,12 @@ export default function Certificates() {
                       >
                         {certificate.title}
                       </motion.h3>
+                      {certificate.issuer && (
+                        <p className="text-sm text-primary mb-3">
+                        {certificate.issuer}
+                        </p>
+                       )}
+
                       <motion.p 
                         className="text-secondary mb-4"
                         initial={{ opacity: 0 }}
@@ -71,42 +77,31 @@ export default function Certificates() {
                       </motion.p>
                       
                       <motion.div 
-                        className="flex flex-wrap gap-2 mb-4"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.3 }}
-                      >
-                        
-                      </motion.div>
-                      
-                      <motion.div 
                         className="flex gap-4"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4 }}
                       >
-                        <motion.a
-                          href={certificate.credentialId}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
-                          whileHover={{ x: 5 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <FaKey className="h-5 w-5" />
-                          <span>Certificate Id</span>
-                        </motion.a>
-                        <motion.a
-                          href={certificate.credentialUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
-                          whileHover={{ x: 5 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <FaExternalLinkAlt className="h-5 w-5" />
-                          <span>Verify</span>
-                        </motion.a>
+                        {certificate.credentialId && (
+                          <div className='flex items-center gap-2 text-secondary'>
+                            <FaKey className='h-5 w-5' aria-label='certificate ID'/>
+                            <span>{certificate.credentialId}</span>
+                          </div>
+                        )}
+
+                        {certificate.credentialUrl && (
+                          <motion.a
+                            href={certificate.credentialUrl}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='flex items-center gap-2 text-secondary hover:text-primary'
+                            whileHover={{ x: 5 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <FaExternalLinkAlt className='h-5 w-5' aria-label='verify certificate'/>
+                            <span>Verify</span>
+                          </motion.a>
+                        )}
                       </motion.div>
                     </div>
                   </motion.div>

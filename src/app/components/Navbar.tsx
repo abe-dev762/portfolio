@@ -25,8 +25,8 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-primary">
-            Ahmad Abidin
+          <Link href="/" className="text-xl font-bold">
+            <span className='bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-700 bg-clip-text text-transparent'>Portfolio</span>
           </Link>
           
           {/* Desktop Menu */}

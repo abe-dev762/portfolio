@@ -49,34 +49,37 @@ export default function About() {
         className="mb-16"
         {...fadeInUp}
       >
-        <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          &quot; I&apos;m Full Stack Developer with expertise in designing, developing, and deploying modern web applications.
-           With a strong foundation in both frontend and backend technologies, I specialize in creating scalable, high-performance solutions that deliver exceptional user experiences.
-          I&apos;m proficient in technologies such as React, Next.js, Angular, Node.js, Spring Boot, PostgreSQL, and Docker, 
-          and I have hands-on experience implementing CI/CD pipelines, optimizing database performance, and building secure, maintainable architectures. &quot;
-        </p>
+        <motion.p 
+          className="text-lg text-secondary max-w-3xl mx-auto text-center"
+          {...fadeInUp}
+        >
+          &quot; I&apos;m  <span className="text-primary font-semibold">Full Stack Developer</span> passionate about creating scalable web apps.
+           With a strong foundation in both frontend and backend technologies, I bring a self-driven mindset, a curiosity for 
+           new tech, and a love for building projects that solve real problems.
+          I&apos;m proficient in technologies such as React, Next.js, Angular, Node.js, Spring Boot, SQL and NoSQL, and Docker. &quot;
+        </motion.p>
       </motion.section>
 
       {/* Skills Section */}
       <motion.section 
-        className="mb-16"
+        className="mb-20"
         {...fadeIn}
         transition={{ delay: 0.2 }}
       >
         <motion.h2 
-          className="section-title"
+          className="text-3xl font-bold text-center mb-10"
           {...fadeInUp}
         >
           Skills
         </motion.h2>
         <motion.div 
-          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
         >
           <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -93,7 +96,7 @@ export default function About() {
           </motion.div>
           
           <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -125,7 +128,7 @@ export default function About() {
           </motion.div>
           
           <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
             variants={fadeInUp}
             {...cardHover}
           >
@@ -168,62 +171,36 @@ export default function About() {
           animate="animate"
         >
           <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Senior Full Stack Developer</h3>
-            <p className="text-primary mb-2">Company Name • 2020 - Present</p>
+            <h3 className="text-xl font-semibold mb-2">Self-Driven Learning and Development</h3>
+            <p className="text-primary mb-2">April 2025 - Present</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Led development of multiple web applications using React and Node.js</li>
-              <li>Implemented CI/CD pipelines reducing deployment time by 50%</li>
-              <li>Mentored junior developers and conducted code reviews</li>
+               <li>Developed and deployed <strong>full-stack applications</strong> including an <strong>E-commerce Platform</strong>, <strong>Social Media App</strong>, and <strong>Expense Tracker</strong> using Next.js, TypeScript, PostgreSQL, Prisma, and Tailwind CSS.</li>
+              <li>Built a <strong>Voting/Poll App</strong> and <strong>Real-time Chat App</strong> with Spring Boot, Java, MySQL, WebSocket, and Docker for backend-heavy workflows.</li>
+              <li>Created responsive UIs like <strong>Blomma</strong> and <strong>Currency Converter</strong> to demonstrate React, Redux, and vanilla JavaScript expertise.</li>
+              <li>Implemented authentication, third-party API integration, and CI/CD pipelines with GitHub Actions, Docker, and cloud hosting (Vercel, Render).</li>
             </ul>
           </motion.div>
           
           <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="bg-white/10 backdrop-blur-md border border-white/20 dark:border-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
-            <p className="text-primary mb-2">Previous Company • 2018 - 2020</p>
+            <h3 className="text-xl font-semibold mb-2">Bootcamp/Course Project</h3>
+            <p className="text-primary mb-2">May 2025 - present</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Developed and maintained RESTful APIs</li>
-              <li>Built responsive user interfaces with modern JavaScript frameworks</li>
-              <li>Optimized database queries improving performance by 40%</li>
+              <li>Built and deployed multiple front-end app and back-end app using React, Node.js, Express, MongoDB, 
+                  with tools like Git, Docker, Kubernetes, OpenShift, IBM cloud.
+              </li>
+              <li>Built responsive user interfaces with modern frameworks like Next.js, and Angular.</li>
+              <li>Collaborated with peers, coducted project and code review with peers,
+                  managed version control with git/github to deliver production ready apps
+              </li>
             </ul>
-          </motion.div>
-        </motion.div>
-      </motion.section>
-
-      {/* Education Section */}
-      <motion.section
-        {...fadeIn}
-        transition={{ delay: 0.6 }}
-      >
-        <motion.h2 
-          className="section-title"
-          {...fadeInUp}
-        >
-          Education
-        </motion.h2>
-        <motion.div 
-          className="max-w-3xl mx-auto"
-          variants={staggerContainer}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.div 
-            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-            variants={fadeInUp}
-            {...cardHoverSmall}
-          >
-            <h3 className="text-xl font-semibold mb-2">Vocation School SORE Tulungagung</h3>
-            <p className="text-primary mb-2">2016 - 2019</p>
-            <p className="text-secondary">
-              Graduated with honors.
-            </p>
           </motion.div>
         </motion.div>
       </motion.section>

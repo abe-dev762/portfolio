@@ -11,7 +11,7 @@ export interface Project {
 export interface Certificate {
   title: string;
   description?: string;
-  isuuer: string;
+  issuer: string;
   credentialId?: string;
   credentialUrl?: string;
   image: string;
