@@ -9,6 +9,14 @@ export const projects: Project[] = [
         demoLink: 'https://marga-shop-e-commerce.vercel.app',
         image: '/project/e-commerce.png',
       },
+       {
+        title: 'Currency Converter',
+        description: 'A HTML + CSS and JavaScript project',
+        technologies: ['HTML 5', 'CSS 3', 'JavaScript'],
+        githubLink: 'https://github.com/abe-dev762/currency-converter',
+        demoLink: 'https://abe-dev762.github.io/currency-converter/',
+        image: '/project/currency-converter.png',
+      },
       {
         title: 'Blomma',
         description: 'A front-end project using Vite + React and Tailwind CSS',
