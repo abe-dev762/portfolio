@@ -53,7 +53,7 @@ export default function Hero() {
               <FaGithub />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/ahmad-abidin-3862a1370/"
+              href="https://www.linkedin.com/in/ahmadabidin"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
