@@ -178,9 +178,9 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Self-Driven Learning and Development</h3>
             <p className="text-primary mb-2">April 2025 - Present</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-               <li>Developed and deployed <strong>full-stack applications</strong> including an <strong>E-commerce Platform</strong>, <strong>Social Media App</strong>, and <strong>Expense Tracker</strong> using Next.js, TypeScript, PostgreSQL, Prisma, and Tailwind CSS.</li>
+              <li>Developed and deployed <strong>full-stack applications</strong> including an <strong>E-commerce Platform</strong>, <strong>Social Media App</strong>, and <strong>Expense Tracker</strong> using Next.js, TypeScript, PostgreSQL, Prisma, and Tailwind CSS.</li>
               <li>Built a <strong>Voting/Poll App</strong> and <strong>Real-time Chat App</strong> with Spring Boot, Java, MySQL, WebSocket, and Docker for backend-heavy workflows.</li>
-              <li>Created responsive UIs like <strong>Blomma</strong> and <strong>Currency Converter</strong> to demonstrate React, Redux, and vanilla JavaScript expertise.</li>
+              <li>Created responsive UIs like <strong>Blomma</strong> to demonstrate React, Redux, and vanilla JavaScript expertise.</li>
               <li>Implemented authentication, third-party API integration, and CI/CD pipelines with GitHub Actions, Docker, and cloud hosting (Vercel, Render).</li>
             </ul>
           </motion.div>
