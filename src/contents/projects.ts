@@ -49,21 +49,4 @@ export const projects: Project[] = [
         demoLink: 'https://luno-app-zeta.vercel.app/',
         image: '/project/luno.png',
       },
-      {
-        title: 'Voting/Poll App',
-        description: 'A full-stack voting app built with Spring Boot, Java, Angular, MySQL and Tailwind CSS.',
-        technologies: ['Spring Boot', 'Java', 'Angular' ,'Tailwind CSS', 'MySQL'],
-        githubLink: 'https://github.com/abe-dev762/voting-poll-App',
-        demoLink: 'https://hub.docker.com/r/abe762/voting-app',
-        image: '/project/voting-app.png',
-      },
-      {
-        title: 'Real-time Chat App',
-        description: 'A full-stack real-time chat app built with Spring Boot, Java, Thymeleaf, and WebSocket.',
-        technologies: ['Spring Boot', 'Java', 'Thymeleaf' ,'WebSocker'],
-        githubLink: 'https://github.com/abe-dev762/chat-app',
-        demoLink: 'https://hub.docker.com/r/abe762/chatapp',
-        image: '/project/chat-app.png',
-      },
-
 ]

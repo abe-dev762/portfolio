@@ -6,7 +6,6 @@ import {
   FaGraduationCap,
   FaNodeJs, 
   FaGitAlt, 
-  FaJava,
   FaSyncAlt 
 } from "react-icons/fa";
 import { 
@@ -25,12 +24,11 @@ import { SiReact,
         SiHtml5,
         SiCss3,
         SiExpress,
-        SiPostgresql,
         SiMongodb,
         SiMysql,
-        SiSpringboot,
+        SiBootstrap,
         SiKubernetes,
-        SiDocker 
+        SiDocker,
        } from "react-icons/si";
 
 
@@ -56,7 +54,7 @@ export default function About() {
           &quot; I&apos;m  <span className="text-primary font-semibold">Full Stack Developer</span> passionate about creating scalable web apps.
            With a strong foundation in both frontend and backend technologies, I bring a self-driven mindset, a curiosity for 
            new tech, and a love for building projects that solve real problems.
-          I&apos;m proficient in technologies such as React, Next.js, Angular, Node.js, Spring Boot, SQL and NoSQL, and Docker. &quot;
+          I&apos;m proficient in technologies such as React, Next.js, Node.js, Express, MySQL, MongoDB and Docker. &quot;
         </motion.p>
       </motion.section>
 
@@ -91,6 +89,7 @@ export default function About() {
               <li className="flex items-center gap-2"><SiAngular className="text-red-500" /> Angular</li>
               <li className="flex items-center gap-2"><SiTypescript className="text-blue-600" /> TypeScript</li>
               <li className="flex items-center gap-2"><SiTailwindcss className="text-sky-500" /> Tailwind CSS</li>
+              <li className="flex items-center gap-2"><SiBootstrap className="text-indigo-800" /> Bootstrap</li>
               <li className="flex items-center gap-2"><SiHtml5 className="text-orange-500" /> + <SiCss3 className='text-blue-600'/> HTML5 / CSS3</li>
             </ul>
           </motion.div>
@@ -110,19 +109,10 @@ export default function About() {
                 <SiExpress className="text-gray-700 dark:text-gray-300" /> Express
               </li>
               <li className="flex items-center gap-2">
-                <SiPostgresql className="text-blue-600" /> PostgreSQL
-              </li>
-              <li className="flex items-center gap-2">
                 <SiMongodb className="text-green-600" /> MongoDB
               </li>
               <li className="flex items-center gap-2">
                 <SiMysql className="text-blue-500" /> MySQL
-              </li>
-              <li className="flex items-center gap-2">
-                <FaJava className="text-red-500" /> Java
-              </li>
-              <li className="flex items-center gap-2">
-                <SiSpringboot className="text-green-500" /> Spring Boot
               </li>
             </ul>
           </motion.div>
@@ -178,8 +168,7 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Self-Driven Learning and Development</h3>
             <p className="text-primary mb-2">April 2025 - Present</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Developed and deployed <strong>full-stack applications</strong> including an <strong>E-commerce Platform</strong>, <strong>Social Media App</strong>, and <strong>Expense Tracker</strong> using Next.js, TypeScript, PostgreSQL, Prisma, and Tailwind CSS.</li>
-              <li>Built a <strong>Voting/Poll App</strong> and <strong>Real-time Chat App</strong> with Spring Boot, Java, MySQL, WebSocket, and Docker for backend-heavy workflows.</li>
+              <li>Developed and deployed <strong>full-stack applications</strong> including an <strong>E-commerce Platform</strong>, <strong>Social Media App</strong>, and <strong>Expense Tracker</strong> using Next.js, TypeScript, PostgreSQL, Prisma, Payment integration(Stripe) and Tailwind CSS.</li>
               <li>Created responsive UIs like <strong>Blomma</strong> to demonstrate React, Redux, and vanilla JavaScript expertise.</li>
               <li>Implemented authentication, third-party API integration, and CI/CD pipelines with GitHub Actions, Docker, and cloud hosting (Vercel, Render).</li>
             </ul>
@@ -194,9 +183,9 @@ export default function About() {
             <p className="text-primary mb-2">May 2025 - present</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
               <li>Built and deployed multiple front-end app and back-end app using React, Node.js, Express, MongoDB, 
-                  with tools like Git, Docker, Kubernetes, OpenShift, IBM cloud.
+                  with tools like Git, Docker, Kubernetes.
               </li>
-              <li>Built responsive user interfaces with modern frameworks like Next.js, and Angular.</li>
+              <li>Built responsive user interfaces with modern frameworks like React, Next.js</li>
               <li>Collaborated with peers, coducted project and code review with peers,
                   managed version control with git/github to deliver production ready apps
               </li>
